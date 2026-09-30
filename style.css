@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+}
+
+header {
+    background: #0f172a;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#download-btn {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.app-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.form-section {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+/* रेज्यूमे का असली A4 जैसा लुक */
+.resume-preview {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    min-height: 297mm; /* A4 Ratio */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    border-top: 8px solid #0f172a;
+}
+
+.resume-header h1 {
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.resume-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    body {
+        background: white;
+    }
+    .app-container {
+        margin: 0;
+        padding: 0;
+    }
+    .resume-preview {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+    }
+}
+.template-selector {
+  margin-bottom: 20px;
+}
+.tmpl-btn {
+  padding: 8px 15px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.tmpl-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+
+.template-modern {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding: 30px;
+}
+.template-modern h1 {
+  color: #0056b3; 
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 10px;
+}
+.template-modern h3 {
+  color: #0056b3;
+}
+
+
+.template-classic {
+  background-color: #fcfcfc;
+  font-family: 'Times New Roman', Times, serif; /* पुराना/ऑफिशियल फॉन्ट */
+  color: #111;
+  padding: 30px;
+  border: 1px solid #ddd;
+}
+.template-classic h1 {
+  color: #000;
+  text-transform: uppercase; 
+  text-align: center; 
+}
+.template-classic p {
+  text-align: center;
+}
+.template-classic h3 {
+  border-bottom: 1px solid #000;
+}
+
+
+.template-minimal {
+  background-color: #fafafa;
+  font-family: 'Arial', sans-serif;
+  color: #444;
+  padding: 40px;
+}
+.template-minimal h1 {
+  font-weight: 300; 
+  letter-spacing: 2px;
+  color: #222;
+}
+.template-minimal h3 {
+  color: #666;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
